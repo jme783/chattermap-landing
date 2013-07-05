@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-RailsPrelaunchSignup::Application.config.secret_key_base = '4c2a0131d810c8fb786294e8f37f79809d31678cf211c6bd0b911b52389b9854cef026f8e535ab65eefe5fe62d7c83638d1b3ba303f07e2a1b65309541ee9154'
+RailsPrelaunchSignup::Application.config.secret_key_base = 'af15abfab59f5371acc35e2a2d3b1f01eeab801bb8d02f5b565dbf2def8de94d2f8f9988c91d68157e61579f855ebcdf8d66dfe5bac69f618e1ea8ba590e7777'
