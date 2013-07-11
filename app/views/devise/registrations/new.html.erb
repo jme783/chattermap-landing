@@ -1,12 +1,12 @@
-<div id="request-invite" class="modal hide fade" style="display: <%= @user.errors.any? ? 'block' : 'none';%>;">
-  <%= simple_form_for resource, :as => resource_name, :url => registration_path(resource_name) , :html => {:class => 'form-horizontal' } do |f| %>
+<div id="request-invite" class="modal" style="display: <%= @user.errors.any? ? 'block' : 'none';%>">
+   <%= simple_form_for resource, :as => resource_name, :url => registration_path(resource_name) , :html => {:class => 'form-horizontal' } do |f| %>
     <div class="modal-header">
       <a class="close" data-dismiss="modal">&#215;</a>
       <h3>Request Invitation</h3>
     </div>
     <div class="modal-body">
       <%= f.error_notification %>
-      <%= f.input :email, :placeholder => 'Enter your email address' %>
+      <%= f.input :email, :placeholder => 'user@example.com' %>
     </div>
     <div class="modal-footer">
       <%= f.submit "Request Invitation", :class => "btn btn-primary", :id => 'invitation_button' %>
