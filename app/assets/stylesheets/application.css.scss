@@ -23,6 +23,29 @@
 body#chattermap-body-reset {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif
 }
+/* BUTTON STYLES RESET */
+#chattermap-body-reset .btn-primary {
+  background: #5695e1; /* Old browsers */
+  background: -moz-linear-gradient(top,  #5695e1 0%, #295c99 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5695e1), color-stop(100%,#295c99)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #5695e1 0%,#295c99 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #5695e1 0%,#295c99 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #5695e1 0%,#295c99 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #5695e1 0%,#295c99 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5695e1', endColorstr='#295c99',GradientType=0 ); /* IE6-9 */
+}
+
+#chattermap-body-reset .btn-primary:hover {
+  background: #295c99; /* Old browsers */
+  background: -moz-linear-gradient(top,  #295c99 0%, #5695e1 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#295c99), color-stop(100%,#5695e1)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #295c99 0%,#5695e1 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #295c99 0%,#5695e1 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #295c99 0%,#5695e1 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #295c99 0%,#5695e1 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#295c99', endColorstr='#5695e1',GradientType=0 ); /* IE6-9 */
+}
+
 /* NAVIGATION STYLES OVERRIDE */
 
 #cMap-navbar.navbar-inner {
@@ -51,4 +74,33 @@ body#chattermap-body-reset {
 #cMap-navLinks.nav > li > a {
   color:#fff;
   text-shadow:none;
+}
+
+/* ROMANCE INTO AN INVITE */
+#romance-background {
+  width: 960px;
+  height:560px;
+  background: image-url("chattermap-product-teaser.jpg");
+  margin:0 auto;
+  position:relative;
+  overflow:auto;
+}
+#call-to-action {
+  text-align:center;
+  margin:207px 0 0 80px;
+}
+
+#call-to-action p {
+  font-size:20px;
+}
+#call-to-action h5 {
+  font-size:24px;
+  color:#7b7b7b;
+  position:absolute;
+  top:40px;
+  left:225px;
+  font-weight:normal;
+  text-align:left;
+  line-height:29px;
+  text-shadow: 0 1px #fff;
 }
