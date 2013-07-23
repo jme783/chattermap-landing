@@ -14,6 +14,9 @@ class RegistrationsController < Devise::RegistrationsController
         (render(:partial => 'thankyou', :layout => false) && return)  if request.xhr?
         respond_with resource, :location => after_inactive_sign_up_path_for(resource)
       end
+      elsif resource.errors.any?
+        (render(:partial => 'modal', :layout => false) && return)  if request.xhr?
+    
     else
       clean_up_passwords resource
       render :action => :new, :layout => !request.xhr?

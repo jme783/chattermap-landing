@@ -79,7 +79,7 @@ body#chattermap-body-reset {
 /* ROMANCE INTO AN INVITE */
 #romance-background {
   width: 960px;
-  height:560px;
+  height:540px;
   background: image-url("chattermap-product-teaser.jpg");
   margin:0 auto;
   position:relative;
@@ -103,4 +103,14 @@ body#chattermap-body-reset {
   text-align:left;
   line-height:29px;
   text-shadow: 0 1px #fff;
+}
+
+/* SIGN IN PAGE */
+.control-group.boolean.optional.user_remember_me label {
+  display:inline-block;
+}
+.control-group.boolean.optional.user_remember_me div.controls {
+  display:inline-block;
+  vertical-align:middle;
+  margin:5px 0 0 10px;
 }
