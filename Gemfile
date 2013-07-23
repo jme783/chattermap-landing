@@ -1,7 +1,12 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '3.2.13'
-gem 'sqlite3'
+group :development, :test do
+  gem 'sqlite3'
+end
+group :production do
+  gem 'pg'
+end
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
@@ -16,6 +21,8 @@ gem 'rolify'
 gem 'simple_form'
 gem 'thin'
 gem 'gibbon'
+gem 'heroku'
+gem 'thin'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :rbx]
@@ -33,3 +40,4 @@ group :test do
   gem 'email_spec'
   gem 'launchy'
 end
+
